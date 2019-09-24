@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+      "target": "es6",
+      "baseUrl": "src",
+      "paths": {
+        "*":["./containers/*"],
+        "containers":["./containers/*"],
+        "assets/*": ["./containers/assets"],
+        "components/*": ["./containers/components"],
+        "config/*": ["./containers/config"],
+        "middleware/*": ["./containers/middleware"],
+        "@redux/*": ["./containers/redux"],
+        "routes/*": ["./containers/routes"],
+        "styles/*": ["./containers/styles"],
+        "utils/*": ["./containers/utils"],
+        "view/*": ["./containers/view"]
+      }
+    },
+    "exclude": ["node_modules", "**/node_modules/*"],
+    "include": ["src/**/*"]
+  }
