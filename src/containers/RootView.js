@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import Header from 'components/Header';
-
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import Header from './components/Header';
+import router from './routes/Routes';
 class RootView extends Component {
     constructor(props) {
         super(props);
@@ -10,7 +11,18 @@ class RootView extends Component {
 
     render() {
         return (
-                <Header />
+            <div>
+            <Header/>
+                <Switch>
+                    {router.map((e, i) => {
+                        return e.component ?
+                            <Route path={e.path} component={e.component} />
+                            :
+                            null
+                    })}
+                </Switch>
+            </div>
+
         );
     }
 }

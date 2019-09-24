@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import images from '../res/images';
+import images from 'containers/assets/images';
 
 class Header extends Component {
     constructor(props) {

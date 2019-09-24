@@ -1,16 +1,13 @@
 import React, { Component } from 'react'
-import {BrowserRouter as Router,Route} from 'react-router-dom'
-import Home from 'views/Home/HomeScreen'
-class Routes extends Component {
-    render() {
-        return (
-            <div>
-                <Router>
-                    <Route path="/" component={Home} exact />
-                </Router>
-            </div>
-        )
-    }
-}
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import Home from 'containers/views/Home/HomeScreen'
 
-export default Routes
+const router = [
+    { component: Home, path: '/' },
+    { component: Home, path: '/' },
+    { component: Home, path: '/' },
+    { component: Home, path: '/' },
+    { component: Home, path: '/' },
+]
+
+export default router
