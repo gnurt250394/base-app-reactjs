@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import images from 'containers/assets/images';
 const data = [
     {
         id: 1,
