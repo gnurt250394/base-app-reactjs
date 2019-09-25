@@ -13,7 +13,7 @@ class RootView extends Component {
         console.log(this.props)
         return (
             <div>
-                    <Header />
+                     <Header />
                 <main>
                     <Switch>
                         {router.map((route, index) => {
