@@ -4,6 +4,7 @@ import RootView from './RootView';
 import LoginScreen from './views/Login/LoginScreen';
 import constants from './config/constants';
 import './App.scss'
+import RegisterScreen from './views/Register/RegisterScreen';
 class Main extends Component {
     constructor(props) {
         super(props);
@@ -18,6 +19,7 @@ class Main extends Component {
                     <div>
                         <Route exact component={LoginScreen} path="/" />
                         <Route exact component={LoginScreen} path={constants.path.login} />
+                        <Route exact component={RegisterScreen} path={constants.path.register} />
                         {["/admin", '/admin/:function', "/admin/:function/:id"].map((e, i) => {
                             return <Route key={i} path={e} exact component={RootView} />
                         })}

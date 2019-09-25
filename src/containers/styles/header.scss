@@ -2,9 +2,28 @@
     display: inline-block;
 }
 .menu{
-    background: red
+    background: rgb(66,103,178)
 }
 .menu ul{
-    background: green;
-    display: inline-block
+    display: contents;
+}
+.menu li{
+    display:inline-flex;
+    height: 36px;
+    align-items: center;
+    justify-content: center
+}
+.menu a{
+    font-weight: 500;
+    color: aliceblue;
+    font-style: unset;
+    padding: 10px;
+}
+.menu a:hover{
+    background: rgb(2, 67, 97);
+    font-weight: 500;
+    color: aliceblue;
+    font-style: unset;
+    // padding: 10px 10px;
+    border-radius: 10px;
 }

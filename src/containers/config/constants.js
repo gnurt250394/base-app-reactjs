@@ -3,7 +3,7 @@ const database = {
 }
 const path ={
     login:'/dangnhap',
-    register:'/admin/dangky',
+    register:'/dangky',
     home:'/admin/trangchu',
     profile:'/admin/profile'
 }
