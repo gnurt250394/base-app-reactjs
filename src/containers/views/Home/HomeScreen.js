@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Paper, Table, TableHead, TableBody, TableFooter, TableRow, TableCell } from '@material-ui/core';
+import { Paper, Table, TableHead, TableBody, TableFooter, TableCell } from '@material-ui/core';
 class Home extends Component {
     render() {
         return (
