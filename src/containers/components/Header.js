@@ -3,18 +3,24 @@ import images from 'containers/assets/images';
 const data = [
     {
         id: 1,
-        name: 'abc',
+        name: 'Trang chủ',
+        path:'/admin/trangchu'
+    },
+    {
+        id: 2,
+        name: 'Đăng nhập',
+        path:'/dangnhap'
 
     },
     {
-        id: 1,
-        name: 'abc',
-
+        id: 3,
+        name: 'Đăng ký',
+        path:'/dangky'
     },
     {
-        id: 1,
-        name: 'abc',
-
+        id: 4,
+        name: 'Thông tin cá nhân',
+        path:'/admin/profile'
     },
 ]
 class Header extends Component {
@@ -29,7 +35,9 @@ class Header extends Component {
             <ul>
                 {data.map((item, index) => {
                     return (
-                        <li key={index}>{item.name}</li>
+                        <li key={index}>
+                            <a href={item.path}>{item.name}</a>
+                        </li>
                     )
                 })}
 
@@ -38,12 +46,9 @@ class Header extends Component {
     }
     render() {
         return (
-            <nav className="navbar-header">
                 <div className="menu">
                     {this.renderList()}
                 </div>
-
-            </nav>
         );
     }
 }
