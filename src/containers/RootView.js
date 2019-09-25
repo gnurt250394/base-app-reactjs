@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Header from './components/Header';
 import router from './routes/Routes';
+import Home from './views/Home/HomeScreen';
+import RegisterScreen from './views/Register/RegisterScreen';
+import ProfileScreen from './views/Profile/ProfileScreen';
 class RootView extends Component {
     constructor(props) {
         super(props);
@@ -10,17 +13,19 @@ class RootView extends Component {
     }
 
     render() {
+        console.log(this.props)
         return (
             <div>
-            <Header/>
-                <Switch>
-                    {router.map((e, i) => {
-                        return e.component ?
-                            <Route path={e.path} component={e.component} />
-                            :
-                            null
-                    })}
-                </Switch>
+                <nav>
+                    <Header />
+                </nav>
+                <main>
+                    <Switch>
+                        {router.map((route, index) => {
+                            return route.component ? <Route key={index} component={route.component} path={route.path} /> : null
+                        })}
+                    </Switch>
+                </main>
             </div>
 
         );

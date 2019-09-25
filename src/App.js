@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter } from 'react-router-dom'
-import RootView from 'containers/RootView';
+import Main from 'containers/Main';
 
 
 function App() {
   return (
     <BrowserRouter>
-      <RootView />
+      <Main />
     </BrowserRouter>
   );
 }

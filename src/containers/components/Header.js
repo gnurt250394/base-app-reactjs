@@ -1,40 +1,49 @@
 import React, { Component } from 'react';
 import images from 'containers/assets/images';
+const data = [
+    {
+        id: 1,
+        name: 'abc',
 
+    },
+    {
+        id: 1,
+        name: 'abc',
+
+    },
+    {
+        id: 1,
+        name: 'abc',
+
+    },
+]
 class Header extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            avatar:"https://vnn-imgs-f.vgcloud.vn/2019/06/11/16/co-gai-chup-anh-khoa-than-o-ho-sen-tung-dong-phim-cung-tram-anh-4.jpg"
+            avatar: "https://vnn-imgs-f.vgcloud.vn/2019/06/11/16/co-gai-chup-anh-khoa-than-o-ho-sen-tung-dong-phim-cung-tram-anh-4.jpg"
         };
     }
+    renderList = () => {
+        return (
+            <ul>
+                {data.map((item, index) => {
+                    return (
+                        <li key={index}>{item.name}</li>
+                    )
+                })}
 
+            </ul>
+        )
+    }
     render() {
         return (
-            <div className="menu">
-                <ul>
-                    <input />
-                    <button >
-                        <img width="19px" src={images.ic_search} />
-                    </button>
-                    <li><a href="/dangnhap" >Trang chủ</a></li>
-                    <li>
-                        <a href="#" className="container-avatar">
-                            <img
-                                className="avatar"
-                                width="20px"
-                                src={this.state.avatar}
-                            />
-                            Diễn đàn</a>
+            <nav className="navbar-header">
+                <div className="menu">
+                    {this.renderList()}
+                </div>
 
-                    </li>
-                    <li><a href="#">Tin tức</a></li>
-                    <li><a href="#">Hỏi đáp</a></li>
-                    <li><a href="#">Liên hệ</a></li>
-                    <li><a href="#">Liên hệ</a></li>
-                    <li><a href="#">Liên hệ</a></li>
-                </ul>
-            </div>
+            </nav>
         );
     }
 }
