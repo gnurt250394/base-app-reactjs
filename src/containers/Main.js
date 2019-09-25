@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import Header from './components/Header';
-import router from './routes/Routes';
 import RootView from './RootView';
 import LoginScreen from './views/Login/LoginScreen';
 import constants from './config/constants';
