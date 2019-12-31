@@ -41,7 +41,7 @@
   },
   "jest": {
     "moduleNameMapper": {
-      "containers/(.*)": "<rootDir>/src/$1"
+      "(.*)": "<rootDir>/src/$1"
     }
   }
 }

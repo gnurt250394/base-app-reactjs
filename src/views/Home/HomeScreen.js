@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Paper, Table, TableHead, TableBody, TableFooter, TableCell } from '@material-ui/core';
-class Home extends Component {
-    render() {
+const Home=()=>  {
         return (
             <Paper className={"Paper-container"}>
                 <Table>
@@ -23,7 +22,6 @@ class Home extends Component {
                 </Table>
             </Paper>
         )
-    }
 }
 
 export default Home

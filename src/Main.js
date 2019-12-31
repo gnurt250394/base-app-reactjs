@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import RootView from './RootView';
-import LoginScreen from './views/Login/LoginScreen';
-import constants from './config/constants';
+import LoginScreen from 'views/Login/LoginScreen';
+import constants from 'config/constants';
 import './App.scss'
-import RegisterScreen from './views/Register/RegisterScreen';
+import RegisterScreen from 'views/Register/RegisterScreen';
 class Main extends Component {
     constructor(props) {
         super(props);
