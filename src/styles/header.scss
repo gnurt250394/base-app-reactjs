@@ -1,29 +1,12 @@
-.navbar-header{
-    display: inline-block;
-}
-.menu{
-    background: rgb(66,103,178)
-}
-.menu ul{
-    display: contents;
-}
-.menu li{
-    display:inline-flex;
-    height: 36px;
+.header-app {
+    width: 100%;
     align-items: center;
-    justify-content: center
+    display: flex;
+    background-color: red;
 }
-.menu a{
-    font-weight: 500;
-    color: aliceblue;
-    font-style: unset;
-    padding: 10px;
+.Column {
+    justify-content: space-between;
 }
-.menu a:hover{
-    background: rgb(2, 67, 97);
-    font-weight: 500;
-    color: aliceblue;
-    font-style: unset;
-    // padding: 10px 10px;
-    border-radius: 10px;
+.Column .title-header{
+    flex: 1;
 }

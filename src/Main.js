@@ -5,6 +5,7 @@ import LoginScreen from 'views/Login/LoginScreen';
 import constants from 'config/constants';
 import './App.scss'
 import RegisterScreen from 'views/Register/RegisterScreen';
+import Home from 'views/Home/HomeScreen';
 class Main extends Component {
     constructor(props) {
         super(props);
@@ -17,7 +18,7 @@ class Main extends Component {
             <div className="App">
                 <Router>
                     <div>
-                        <Route exact component={LoginScreen} path="/" />
+                        <Route exact component={RootView} path="/" />
                         <Route exact component={LoginScreen} path={constants.path.login} />
                         <Route exact component={RegisterScreen} path={constants.path.register} />
                         {["/admin", '/admin/:function', "/admin/:function/:id"].map((e, i) => {

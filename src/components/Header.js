@@ -1,25 +1,26 @@
 import React, { Component } from 'react';
+import images from 'assets/images';
 const data = [
     {
         id: 1,
         name: 'Trang chủ',
-        path:'/admin/trangchu'
+        path: '/admin/trangchu'
     },
     {
         id: 2,
         name: 'Đăng nhập',
-        path:'/dangnhap'
+        path: '/dangnhap'
 
     },
     {
         id: 3,
         name: 'Đăng ký',
-        path:'/dangky'
+        path: '/dangky'
     },
     {
         id: 4,
         name: 'Thông tin cá nhân',
-        path:'/admin/profile'
+        path: '/admin/profile'
     },
 ]
 class Header extends Component {
@@ -45,9 +46,17 @@ class Header extends Component {
     }
     render() {
         return (
-                <div className="menu">
-                    {this.renderList()}
+            <div class="header-app">
+                <div class="Column">
+                    <img src={images.header.ic_back} height={20}/>
+                    <img src={images.ic_home} height={20}/>
+
                 </div>
+                <div class="Column title-header">C2</div>
+                <div class="Column">
+                    <img src={images.header.ic_isc_logo} height={30} />
+                </div>
+            </div>
         );
     }
 }
